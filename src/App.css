@@ -1,0 +1,72 @@
+.app {
+    margin-top: 10.5rem;
+    padding: 2em 1.5em;
+}
+
+/* .app__title {
+    padding:0.2em;
+    margin-bottom: 0.6em;
+    background-image: url(../banner.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 250px;
+    color: black;
+    border-radius: 6px;
+    box-shadow: 1px 1px 10px greenyellow;
+} */
+
+/* .app__title {
+    text-align: center;
+    margin-bottom: 0.6em;
+    color: black;
+} */
+
+.app__bgImage{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    min-width: 360px;
+    width: 100%;
+    height: 220px;
+    background-image: url('../banner-3.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 1px 1px 120px #602850;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: -1.2em;
+}
+
+
+.form__input {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 5px 0 0 5px;
+    padding: 0.5em;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.form__btn {
+    border-radius: 0 5px 5px 0;
+    padding: 0.5em;
+    font-weight: bold;
+    font-family: 'Rubik Vinyl', cursive;
+    background-color: #7bafd1;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: color 500ms ease, background-color 500ms ease-in-out;
+    font-size: 1.1rem;
+}
+
+.form__btn:hover {
+    color: white;
+    background-color: rgb(34, 177, 34);
+    border: 1px solid white;
+}

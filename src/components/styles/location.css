@@ -1,0 +1,40 @@
+.location{
+    margin: 0 auto 1rem;
+    background-color: #062226;
+    min-width: calc(312 - 1em);
+    /* max-width: 1216px; */
+    max-width: 905px;
+    padding: 1em 1em 0.1em 1em;
+    font-family: 'Fraunces', serif;
+    border-radius: 8px;
+    box-shadow: 1px 1px 10px black;
+}
+
+.location__name{
+    text-align: center;
+    font-size: 1.4em;
+    font-family: 'Rubik Vinyl', cursive;
+    margin-top: 1rem;
+}
+.location__hr{
+    border: none;
+    border-bottom: 1px solid #aaaaa9;
+}
+
+.location__list{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    gap: 1em;
+    justify-content: space-around;
+}
+.location__label{
+    font-weight: lighter;
+    font-size: 1.2em;
+    color: white;
+}
+.location__item{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: rgb(156, 152, 152);
+}

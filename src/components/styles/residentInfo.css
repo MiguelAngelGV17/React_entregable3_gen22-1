@@ -1,0 +1,68 @@
+.residents__container {
+    display: flex;
+    gap: 2em;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1216px;
+    font-family: 'Fraunces', serif;
+}
+
+.resident{
+    max-width: 280px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #181D31;
+    position: relative;
+}
+
+.resident__container-status{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 1.5em;
+    gap: 0.5em;
+    padding: 0.2em 0.3em;
+    border-radius: 0 5px 5px 0;
+    background-color: #181D31;
+}
+
+.DeadShadow{
+    box-shadow: 1px 1px 8px red, 1px 1px 8px red;
+}
+.AliveShadow{
+    box-shadow: 1px 1px 8px rgb(34, 177, 34), 1px 1px 8px rgb(34, 177, 34);
+}
+.unknownShadow{
+    box-shadow: 1px 1px 10px grey, 1px 1px 10px gray;
+}
+
+.status {
+    width: 20px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    animation: rotate 800ms infinite;
+}
+
+@keyframes rotate {
+    0%{
+        transform: scale(0.5);
+    }
+}
+
+.Dead {
+    background-color: red;
+}
+.Alive {
+    background-color: rgb(34, 177, 34);
+}
+.unknown {
+    background-color: gray;
+}
+
+.resident__name{
+    text-align: center;
+    padding-top: 0.5em;
+    font-family: 'Rubik Vinyl', cursive; ;
+}
+
