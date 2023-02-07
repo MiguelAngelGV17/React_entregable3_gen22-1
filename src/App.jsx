@@ -68,6 +68,7 @@ function App() {
           className='form__input'
           id='inputLocation'
           type="text"
+          placeholder='Press search for a ramdom search'
           value={selection}
           onChange={handleChange}
           onFocus={handleFocus}
