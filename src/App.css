@@ -3,28 +3,9 @@
     padding: 2em 1.5em;
 }
 
-/* .app__title {
-    padding:0.2em;
-    margin-bottom: 0.6em;
-    background-image: url(../banner.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 250px;
-    color: black;
-    border-radius: 6px;
-    box-shadow: 1px 1px 10px greenyellow;
-} */
-
-/* .app__title {
-    text-align: center;
-    margin-bottom: 0.6em;
-    color: black;
-} */
-
 .app__bgImage{
     position: absolute;
-    top: 0;
+    top: 0px;
     left: 0;
     z-index: -1;
     min-width: 360px;
@@ -38,8 +19,9 @@
 }
 
 .form {
+    max-width: 585.91px;
     display: flex;
-    justify-content: center;
+    margin: 0 auto;
     margin-bottom: -1.2em;
 }
 
@@ -51,6 +33,7 @@
     padding: 0.5em;
     font-size: 1rem;
     text-align: center;
+    position: relative;
 }
 
 .form__btn {
@@ -69,4 +52,32 @@
     color: white;
     background-color: rgb(34, 177, 34);
     border: 1px solid white;
+}
+
+.form__suggestion{
+    z-index: 100;
+    position: absolute;
+    min-width: 312px;
+    max-width: 585.91px;
+    background-color: #7bafd1;
+    top: 248px;
+    left: 1.5em;
+    right: 1.5em; 
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 0.5em;
+    max-height: 190px;
+    overflow-y: scroll;
+}
+
+.false{
+    display: none;
+}
+.form__suggItem{
+    transition: background-color 0.3s ease-in-out, font-weight 0.3s ease-in-out;
+}
+.form__suggItem:hover{
+    cursor: pointer;
+    background-color: gray;
+    font-weight: bold;
 }
