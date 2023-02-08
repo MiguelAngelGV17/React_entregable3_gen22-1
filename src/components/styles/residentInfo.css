@@ -9,7 +9,7 @@
 }
 
 .resident{
-    max-width: 280px;
+    width: 280px;
     border-radius: 10px;
     overflow: hidden;
     background-color: #181D31;
@@ -66,3 +66,14 @@
     font-family: 'Rubik Vinyl', cursive; ;
 }
 
+.resident__items{
+    padding: 0 1em;
+    line-height: 1.5em;
+}
+.resident__item{
+    color: rgb(156, 152, 152);
+}
+.item__info{
+    color: white;
+    font-size: 1.2em;    
+}

@@ -31,9 +31,15 @@
     max-width: 500px;
     border-radius: 5px 0 0 5px;
     padding: 0.5em;
-    font-size: 1rem;
+    font-size: 0.8rem;
     text-align: center;
     position: relative;
+    transition: font-size 500ms ease;
+}
+@media (min-width:430px) {
+    .form__input {
+        font-size: 1rem;
+    }
 }
 
 .form__btn {
@@ -80,4 +86,27 @@
     cursor: pointer;
     background-color: gray;
     font-weight: bold;
+}
+
+.app__error{
+    position: fixed;
+    left: 1.5em;
+    right: 1.5em; 
+    margin: auto;
+    bottom: 15%;
+}
+
+.bx{
+    position: fixed;
+    left: 3%;
+    bottom: 3%;
+    color: white;
+    font-size: 3rem;
+    border-radius: 50%;
+    box-shadow: 1px 1px 20px  black;
+    transition: font-size 700ms ease, box-shadow 700ms ease;
+}
+.bx:hover{
+    box-shadow: 1px 1px 20px  red, 1px 1px 20px  red;
+    font-size: 5rem;
 }

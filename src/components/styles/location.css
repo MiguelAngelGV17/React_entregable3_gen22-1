@@ -1,4 +1,6 @@
 .location{
+    display: flex;
+    flex-direction: column;
     margin: 0 auto 1rem;
     background-color: #062226;
     min-width: calc(312 - 1em);
@@ -10,11 +12,34 @@
 }
 
 .location__name{
+    /* display: inline; */
     text-align: center;
     font-size: 1.4em;
+    margin: 1rem auto 0 auto;
     font-family: 'Rubik Vinyl', cursive;
-    margin-top: 1rem;
+    position: relative;
 }
+
+.location__name::after {
+    content: '';
+    border-left: 2px solid white;
+    background-color: #062226;
+    height: 100%;
+    top: 0;
+    right: -2%;
+    position: absolute;
+    animation: handlerMachine 3s infinite backwards;
+}
+
+@keyframes handlerMachine {
+    from{
+        width: 105%;
+    }
+    to{
+        width: 0;
+    }
+}
+
 .location__hr{
     border: none;
     border-bottom: 1px solid #aaaaa9;

@@ -22,10 +22,10 @@ const ResidentInfo = ({ url }) => {
       <section>
         <h3 className='resident__name'>{character?.name}</h3>
       </section>
-      <ul>
-        <li><span>Specie: </span>{character?.species}</li>
-        <li><span>Origin: </span>{character?.origin.name}</li>
-        <li><span>Eppisodes where appear: </span>{character?.episode.length}</li>
+      <ul className='resident__items'>
+        <li className='resident__item'><span className='item__info'>Specie: </span>{character?.species}</li>
+        <li className='resident__item'><span className='item__info'>Origin: </span>{character?.origin.name}</li>
+        <li className='resident__item'><span className='item__info'>Eppisodes where appear: </span>{character?.episode.length}</li>
       </ul>
     </article>
   )

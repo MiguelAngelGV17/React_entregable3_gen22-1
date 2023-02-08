@@ -53,7 +53,10 @@ function App() {
     }
   }
 
-  const handleFocus = e => setIsShow(true)
+  const handleFocus = e => {
+    console.log(e.target.inputLocation === undefined)
+    setIsShow(true)
+  }
   const handleBlur = () => {
     setTimeout(() => {
       setIsShow(false)
@@ -68,7 +71,7 @@ function App() {
           className='form__input'
           id='inputLocation'
           type="text"
-          placeholder='Press search for a ramdom search'
+          placeholder='Press "Search" for a ramdom search'
           value={selection}
           onChange={handleChange}
           onFocus={handleFocus}
@@ -97,7 +100,7 @@ function App() {
       }
       {
         hasError ?
-          <h2 className='app__error'>❌ Hey! you must provide an id from 1 to 126 🥺</h2>
+          <h2 className='app__error'>❌You must choose an option from the list❌</h2>
           :
           <>
             <LocationInfo location={location} />
@@ -113,6 +116,8 @@ function App() {
             </div>
           </>
       }
+      <a href="https://github.com/MiguelAngelGV17/React_entregable3_gen22-1.git" target="_blank"><i class='bx bxl-github bx-tada' ></i></a>
+      
     </div>
   )
 }
